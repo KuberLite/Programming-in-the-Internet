@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Lab2.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="ru">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> – мое приложение ASP.NET</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+</head>
+<body>
+    <form runat="server">
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <asp:Label ID="StateLabel" runat="server"></asp:Label>
+            <asp:Label ID="LengthViewStateLabel" runat="server"></asp:Label><br />
+            <asp:Button Text="Click" ID="ButtonViewState" runat="server" OnClick="ButtonViewState_Click" />
+            <asp:CheckBox ID="CheckBox1" Text="Check AutoPostBack" AutoPostBack="True" runat="server" OnCheckedChanged="CheckBox1_CheckedChanged"/>
+            <asp:Button ID="ButtonCheckParams" Text="Check Params" runat="server" OnClick="ButtonCheckParams_Click" />
+        </div>
+    </form>
+</body>
+</html>

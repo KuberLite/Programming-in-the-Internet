@@ -1,0 +1,69 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Lab5.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="ru">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> – мое приложение ASP.NET</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+</head>
+<body>
+    <form runat="server" method="post">
+        <br />
+        <br />
+        <label id="HTMLInputReset" runat="server">Элемент HTMLInputReset</label>
+        <button id="HTMLInputResetButton" runat="server" onserverclick="HTMLInputResetButton_Click">Reset</button>
+        <br />
+        <br />
+        <label id="HTMLInputButtonLabel" runat="server">Элемент HTMLInputButton</label>
+        <button id="HTMLInputButtonBtn" runat="server" onserverclick="Button_OnServerClick">Button</button>
+        <br />
+        <br />
+        <label id="HTMLInputSubmit" runat="server">Элемент HTMLInputSubmit</label>
+        <input id="HTMLInputSubmitButton1" type="submit" onserverclick="HTMLInputSubmitButton1_ServerClick" runat="server" />
+        <br />
+        <br />
+        <label id="HtmlInputFile1" runat="server">Элемент HTMLInputFile</label>
+        <input id="HtmlInputFileTextBox1" type="text" runat="server" />
+        <input id="HtmlInputFileButton2" type="file" value="Обзор...">
+        <br />
+        <br />
+        <label id="HtmlInputTex1t" runat="server">Элемент HTMLInputText</label>
+        <input type="text" id="HtmlInputTextButton1" runat="server" onserverchange="HtmlInputTextButton1_ServerChange"/>
+        <br />
+        <br />
+        <label id="HtmlInputPassword1" runat="server">Элемент HTMLInputPassword</label>
+        <input type="password"  id="HtmlInputPasswordButton1" onservechange="HtmlInputTextPassword_ServerChange" runat="server" />
+        <br />
+        <br />
+        <label id="HtmlInputCheckBox1" runat="server">Элемент HTMLInputCheckBox</label>
+        <input type="checkbox" id="HtmlInputCheckBoxButton1" onservechange="HtmlInputCheckBox_ServerChange" runat="server" />
+        <br />
+        <br />
+        <label id="HtmlInputRadioButton1" runat="server">Элемент HtmlInputRadioButton</label>
+        <input type="radio" id="RadioButton3" onserveclick="HtmlInputRadio_ServerChange" runat="server" checked />
+        <input type="radio" id="RadioButton4" runat="server" />
+        <br />
+        <br />
+        <label id="HtmlTextAreaLabel1" runat="server">Элемент HtmlTextArea</label>
+        <br />
+        <textarea id="HtmlTextArea1" columns="50" rows="5" runat="server" />
+        <br />
+        <br />
+        <label id="DropDownListLabel" runat="server" text="Элемент HtmlSelect"></label>
+        <select id="DropDownList1" runat="server"></select>
+    </form>
+    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+    </asp:ContentPlaceHolder>
+</body>
+</html>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+  <Ad>
+    <ImageUrl>../Images/Banner1.bmp</ImageUrl>
+    <NavigationUrl>../Banner1.aspx</NavigationUrl>
+    <AlternateText>Banner1</AlternateText>
+    <Impression>4</Impression>
+    <Keyword>b1</Keyword>
+  </Ad>
+  <Ad>
+    <ImageUrl>../Images/Banner2.bmp</ImageUrl>
+    <NavigationUrl>../Banner2.aspx</NavigationUrl>
+    <AlternateText>Banner2</AlternateText>
+    <Impression>4</Impression>
+    <Keyword>b1</Keyword>
+  </Ad>
+  <Ad>
+    <ImageUrl>../Images/Banner3.bmp</ImageUrl>
+    <NavigationUrl>../Banner3.aspx</NavigationUrl>
+    <AlternateText>Banner3</AlternateText>
+    <Impression>4</Impression>
+    <Keyword>b2</Keyword>
+  </Ad>
+  <Ad>
+    <ImageUrl>../Images/Banner4.bmp</ImageUrl>
+    <NavigationUrl>../Banner4.aspx</NavigationUrl>
+    <AlternateText>Banner4</AlternateText>
+    <Impression>4</Impression>
+    <Keyword>b2</Keyword>
+  </Ad>
+  
+</Advertisements>

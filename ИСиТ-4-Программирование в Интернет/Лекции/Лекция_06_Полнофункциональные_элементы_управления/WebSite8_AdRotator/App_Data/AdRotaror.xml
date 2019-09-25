@@ -1,0 +1,24 @@
+﻿<Advertisements>
+<Ad>
+  <!-- начало баннера 1 -->
+  <ImageUrl>../Image/Banner1.bmp</ImageUrl>
+  <!-- имя   картинки баннера -->
+  <NavigateUrl>../Banner1.aspx</NavigateUrl>
+  <!-- переход по click -->
+  <AlternateText>Banner1</AlternateText>
+  <!-- текст вместо рисунка   -->
+  <Impressions>50</Impressions>
+  <!-- % частота  -->
+  <Keyword>b1</Keyword>
+  <!-- группа для фильтрации  -->
+</Ad>
+<Ad>
+  <!-- начало баннера 2 -->
+  <ImageUrl>../Image/Banner2.bmp</ImageUrl>
+  <NavigateUrl>../Banner2.aspx</NavigateUrl>
+  <AlternateText>Banner2</AlternateText>
+  <Impressions>50</Impressions>
+  <Keyword>b2</Keyword>
+</Ad>
+<!-- ...  -->
+</Advertisements>
